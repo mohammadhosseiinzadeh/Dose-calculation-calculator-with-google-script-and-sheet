@@ -1,13 +1,17 @@
 body {
     margin: 0;
-    direction: rtl;
-    font-family: IRANSans !important;
+    font: 18px;
+    text-align: left;
+    font-family: sans-serif;
 }
 
-.page-content {
+.form-v4 {
+	margin: 50px 0;
+}
+
+.form-v4-page-content {
     width: 100%;
     margin: 0 auto;
-    background: #75e2e9;
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -23,38 +27,34 @@ body {
 }
 
 .form-v4-content {
-    background: #fff;
-    width: 850px;
-    border-radius: 10px;
-    -o-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    width: 920px;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-    margin: 175px 0;
     position: relative;
     display: flex;
     display: -webkit-flex;
-    font-family: IRANSans;
+    margin: 0 auto;
 }
+
 
 .form-v4-content h2 {
     font-weight: 700;
     font-size: 30px;
     padding: 6px 0 0;
     margin-bottom: 34px;
-    font-family: IRANSans;
 }
 
 .form-v4-content .form-left {
-    background: #3786bd;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     padding: 20px 40px;
+    border-radius: 15px !important;
     position: relative;
     width: 100%;
     color: #fff;
@@ -68,6 +68,7 @@ body {
 
 .form-v4-content .form-left span {
     font-weight: 700;
+	font-size: 16px;
 }
 
 .form-v4-content .form-left .text-2 {
@@ -85,7 +86,6 @@ body {
     color: #333;
     font-weight: 700;
     font-size: 15px;
-    font-family: IRANSans;
     appearance: unset;
     -moz-appearance: unset;
     -webkit-appearance: unset;
@@ -110,10 +110,14 @@ body {
     padding: 20px 40px;
     position: relative;
     width: 100%;
+    font-family: sans-serif;
+    border-radius: 15px !important;
 }
 
 .form-v4-content .form-detail h2 {
-    color: #3786bd;
+    color: #15314e;
+	line-height: 1.8;
+    font-family: sans-serif;
 }
 
 .form-v4-content .form-detail .form-group {
@@ -138,8 +142,7 @@ body {
     color: #666;
     display: block;
     margin-bottom: 8px;
-    float: right;
-    font-family: IRANSans;
+    float: left;
 }
 
 .form-v4-content .form-detail .form-row label#valid {
@@ -205,15 +208,16 @@ body {
 }
 
 .form-v4-content .form-detail .input-text {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 
 .form-v4-content .form-detail input {
+    height: 55px;
     width: 100%;
     padding: 11.5px 15px;
-    border: 1px solid #e5e5e5;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 0 20px 2px rgb(0 0 0 / 5%);
     appearance: unset;
     -moz-appearance: unset;
     -webkit-appearance: unset;
@@ -280,6 +284,7 @@ body {
     display: none;
 }
 
+
 .form-v4-content .form-detail .form-checkbox input:checked ~ .checkmark::after {
     display: block;
 }
@@ -301,27 +306,210 @@ body {
     background: #3786bd;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 130px;
     border: none;
     margin: 6px 0 50px 0px;
     cursor: pointer;
     color: #fff;
     font-weight: 700;
     font-size: 15px;
+    font-family: sans-serif !important;
 }
 
 .form-v4-content .form-detail .register:hover {
-    background: #2f73a3;
+    background: #B5BDC6;
+    font-family: sans-serif !important;
 }
 
 .form-v4-content .form-detail .form-row-last input {
     padding: 12.5px;
 }
 
+span.calc_log {
+    display: block;
+    font-weight: 300 !important;
+    font-size: 0.8em;
+    line-height: 2;
+    background-color: #e7e7e7;
+    color: #15314e;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    padding: 5px 15px;
+}
+
+a.select-doz {
+    background: #0966a4;
+    background-image: url("../img/doz.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 230px;
+    min-height: 350px;
+	display: block;
+	border-radius: 0 15px 15px 0 !important;
+}
+
+a.select-koodak {
+    background: #faa61a;
+    background-image: url("../img/koodak.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 175px;
+    min-height: 350px;
+	display: block;
+}
+
+a.select-koodak span, a.select-doz span {
+    background: rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+	font-size: 18px;
+}
+
+a.select-doz span, a.select-koodak span {
+    left: 50%;
+    transform: translate(-50%, 50px);
+}
+
+a.select-koodak, a.select-doz {
+    position: relative !important;
+    transition: all .7s;
+    padding: 0 !important;
+}
+
+a.select-koodak:hover, a.select-doz:hover {
+    width: 180%;
+    transition: all .7s;
+}
+
+.calc-right-col {
+    background: #fff;
+    border-radius: 0 15px 15px 0;
+}
+
+.calc-left-col {
+    background: #15314e;
+}
+
+.form-v4-content .form-detail .register {
+    background: #faa61a;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.form-v4-content .form-detail input[type='radio'] {
+    display: none;
+}
+
+.form-v4-content .form-detail input[type='radio'] + label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: -1px 0 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #e7e7e7;
+}
+
+.form-v4-content .form-detail input[type='radio']:checked + label span {
+    background-color: #faa61a;
+}
+
+.form-v4-content .form-detail input[type='radio'] + label span,
+.form-v4-content .form-detail input[type='radio']:checked + label span {
+    -webkit-transition:background-color 0.4s linear;
+    -o-transition:background-color 0.4s linear;
+    -moz-transition:background-color 0.4s linear;
+    transition:background-color 0.4s linear;
+}
+
+.return-back {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.return-back a {
+    background: #15314e;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.select-shekl {
+    margin: 0 0 25px 0 !important;
+}
+
+/* Date Picker */
+.datePicker {
+    margin: 0;
+    width: unset !important;
+}
+
+.datePickerDay {
+    width: 35px !important;
+}
+
+table.datePicker * {
+    border: none;
+	font-family: 'ISF';
+}
+
+.datePickerToday {
+    background-color: #2f73a3 !important;
+}
+
+.datePickerHeader button, .datePickerFooter button {
+    border: none !important;
+    background: #faa61a !important;
+    text-decoration: none !important;
+	font-family: 'ISF' !important;
+}
+
+.datePickerHeader button:hover, .datePickerFooter button:hover {
+    border: none !important;
+    background: #2f73a3 !important;
+}
+
+.datePickerYear, .datePickerMonth {
+    height: 21px !important;
+    padding: 3px !important;
+}
+
+.datePickerHeader button {
+    padding: 0 5px !important;
+    border-radius: 2px !important;
+}
+
+.form-v4-content .form-detail .form-row input:focus {
+    border: 1px solid #2f73a3;
+}
+
+.datePickerDaySelect {
+    background-color: #faa61a !important;
+}
+
+.calc-left-col h2 {
+	color: #fff;
+    font-family: sans-serif;
+}
+
+.post-1000 h1.main_title {
+	text-align: center;
+}
+
+body, input, ::placeholder {
+    font-family: 'ISF' !important;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 991px) {
     .form-v4-content {
-        margin: 180px 20px;
+        
         flex-direction: column;
         -o-flex-direction: column;
         -ms-flex-direction: column;
@@ -339,6 +527,26 @@ body {
     .form-v4-content .form-detail {
         padding: 30px 20px 30px 20px;
         width: auto;
+    }
+
+    a.select-koodak:hover, a.select-doz:hover {
+        width: 100%;
+    }
+
+    a.select-koodak {
+        border-radius: 0 0 15px 15px !important;
+    }
+
+    a.select-doz {
+        border-radius: 15px 15px 0 0 !important;
+    }
+
+    .calc-right-col {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .calc-left-col {
+        border-radius: 0 0 15px 15px !important;
     }
 }
 
